@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/message_db
+    driver-class-name: org.postgresql.Driver
+    username: myuser
+    password: mypassword
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: rdbms-consumer-group
+      auto-offset-reset: earliest
+    listener:
+      missing-topics-fatal: false
+server:
+  port: 2721

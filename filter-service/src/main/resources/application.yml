@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: StreamData
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: DEBUG

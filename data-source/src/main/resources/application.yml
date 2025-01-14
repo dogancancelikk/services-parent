@@ -1,0 +1,7 @@
+socket:
+  server:
+    host: localhost
+    port: 5027
+
+server:
+  port: 2127
